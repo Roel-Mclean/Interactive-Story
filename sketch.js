@@ -37,6 +37,8 @@ function setup() {
   helpButton.onRelease = function() {
     console.log("help button pressed")
   }
+  
+    image(imagePath, 0, 0);
 
   // loadImage(imagePath, img => {
   //       img.resize(window.innerWidth, window.innerHeight);
@@ -53,5 +55,4 @@ function draw() {
   startNewStoryButton.draw()
   continueStoryButton.draw()
   helpButton.draw()
-  image(imagePath, 0, 0);
 }
