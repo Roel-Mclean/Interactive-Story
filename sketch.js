@@ -5,6 +5,7 @@ function preload() {
 function setup() {
   image(imagePath, 0, 0);
   
+
   //create background to place objects on
   createCanvas(window.innerWidth, window.innerHeight);
   background(255);
@@ -19,6 +20,7 @@ function setup() {
   startNewStoryButton = new Clickable(window.innerWidth / 2 - 400, window.innerHeight - 200);
   startNewStoryButton.resize(300, 150);
   startNewStoryButton.text = "Start New Story";
+    text("jkgskj", window.innerWidth / 2, window.innerHeight / 2);
   startNewStoryButton.onRelease = function() {
     console.log("start New Story Button pressed")
   }
