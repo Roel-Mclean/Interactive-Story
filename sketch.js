@@ -3,6 +3,8 @@ function preload() {
 }
 
 function setup() {
+  image(imagePath, 0, 0);
+  
   //create background to place objects on
   createCanvas(window.innerWidth, window.innerHeight);
   background(255);
@@ -37,8 +39,6 @@ function setup() {
   helpButton.onRelease = function() {
     console.log("help button pressed")
   }
-  
-    image(imagePath, 0, 0);
 
   // loadImage(imagePath, img => {
   //       img.resize(window.innerWidth, window.innerHeight);
